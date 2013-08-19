@@ -1,0 +1,148 @@
+{
+  "material":[
+    {
+        "id":"cast",
+        "name": "アクリル・キャスト材",
+        "group":[
+          {
+            "id":"clear",
+            "name":"透明",
+            "color":[
+              { "id":"clear", "name": "キャスト透明", "code": "#fff" }
+            ],
+            "thickness":[ "2", "3", "5" ],
+            "size":[ "A5(210×148mm)", "A4(297×210mm)", "A3(420×297mm)" ],
+            "value": [ "1200", "1500", "2500" ]
+          },
+          {
+            "id":"colorclear",
+            "name": "カラー透明",
+            "color": [
+              { "id":"carmine", "name":"カーマイン", "code":"#f00" },
+              { "id":"orange", "name":"オレンジ", "code":"#f90"},
+              { "id":"lemon", "name":"レモン", "code":"#ff9"},
+              { "id":"green", "name":"グリーン", "code":"#396"},
+              { "id":"skyblue", "name":"スカイブルー", "code":"#0cf"},
+              { "id":"lightblue", "name":"ライトブルー", "code":"#bde6e1"},
+              { "id":"cobalt", "name":"コバルト", "code":"#36f"}
+            ],
+            "thickness":[ "2", "3", "5" ],
+            "size":[ "A5(210×148mm)", "A4(297×210mm)", "A3(420×297mm)" ],
+            "value": [ "1600", "2000", "3000" ]
+          },
+          {
+            "id":"color",
+            "name": "カラー不透明",
+            "color":[
+              { "id":"white", "name":"キャスト白", "code":"#fff" },
+              { "id":"black", "name":"キャスト黒", "code":"#000" },
+              { "id":"scarlet", "name":"スカーレット", "code":"#f00" },
+              { "id":"mandarin-orange", "name":"マンダリンオレンジ", "code":"#f60" },
+              { "id":"chrome-yellow", "name":"クロームイエロー", "code":"#ff0" },
+              { "id":"emerald", "name":"エメラルド", "code":"#396" },
+              { "id":"chrome-green", "name":"クロームグリーン", "code":"#0f0" },
+              { "id":"viridian", "name":"ビリジャン", "code":"#008000" },
+              { "id":"blue", "name":"ブルー", "code":"#0cf" },
+              { "id":"ultra-marine", "name":"ウルトラマリン", "code":"#00f" },
+              { "id":"cobalt-blue", "name":"コバルトブルー", "code":"#36f" },
+              { "id":"ivory", "name":"アイボリー", "code":"#ebd780" },
+              { "id":"brown", "name":"ブラウン", "code":"#930" },
+              { "id":"chocolate", "name":"チョコレート", "code":"#780000" }
+            ],
+            "thickness":[ "2", "3", "5" ],
+            "size":[ "A5(210×148mm)", "A4(297×210mm)", "A3(420×297mm)" ],
+            "value":[ "1200", "1500", "2500" ]
+          },
+          {
+            "id":"glass",
+            "name":"ガラス",
+            "color": [
+              { "id":"glass", "name":"キャストガラス", "code":"#d9ead3" }
+            ],
+            "thickness":[ "2", "3", "5" ],
+            "size":[ "A5(210×148mm)", "A4(297×210mm)", "A3(420×297mm)" ],
+            "value":[ "2000", "3000", "5000" ]
+          }
+        ]
+    },
+    {
+      "id":"extruded",
+      "name": "アクリル・押出材",
+      "group":[
+        {
+          "id":"clear",
+          "name":"透明",
+          "color":[
+            { "id":"clear", "name":"押出透明", "code":"#fff" }
+          ],
+          "thickness":[ "2", "3", "5" ],
+          "size":[ "A5(210×148mm)", "A4(297×210mm)", "A3(420×297mm)" ],
+          "value":[ "600", "900", "1500" ]
+        },
+        {
+          "id":"colorclear",
+          "name":"カラー透明",
+          "color":[
+            { "id":"gray-smoke", "name":"グレースモーク", "code":"#969696" },
+            { "id":"brown-smoke", "name":"ブラウンスモーク", "code":"#930" },
+            { "id":"milky-white", "name":"乳白色", "code":"#e6e3e0" }
+          ],
+          "thickness":[ "2", "3", "5" ],
+          "size":[ "A5(210×148mm)", "A4(297×210mm)", "A3(420×297mm)" ],
+          "value":[ "800", "1500", "2000" ]
+        },
+        {
+          "id":"coloredge",
+          "name": "カラーエッジ",
+          "color":[
+            { "id":"pink-edge", "name":"ピンクエッジ", "code":"#f2dcdb" },
+            { "id":"yellow-edge", "name":"イエローエッジ", "code":"#fff0a1" },
+            { "id":"green-edge", "name":"グリーンエッジ", "code":"#d7e4bd" },
+            { "id":"blue-edge", "name":"ブルーエッジ", "code":"#d2dbe5" },
+            { "id":"glass-edge", "name":"ガラスエッジ", "code":"#c3d69b" },
+            { "id":"flu-pink-edge", "name":"蛍光ピンクエッジ", "code":"#ff95d3" },
+            { "id":"flu-orange-edge", "name":"蛍光オレンジエッジ", "code":"#ffcc66" },
+            { "id":"flu-green-edge", "name":"蛍光グリーンエッジ", "code":"#dbff8f" },
+            { "id":"flu-violet-edge", "name":"蛍光バイオレットエッジ", "code":"#cabcff" }
+          ],
+          "thickness":[ "2", "3", "5" ],
+          "size":[ "A5(210×148mm)", "A4(297×210mm)", "A3(420×297mm)" ],
+          "value": [ "800", "1500", "2000" ]
+        },
+        {
+          "id":"color",
+          "name": "カラー不透明",
+          "color":[
+            { "id":"white", "name":"押出白", "code":"#fff" },
+            { "id":"black", "name":"押出黒", "code":"#000" }
+          ],
+          "thickness":[ "2", "3", "5" ],
+          "size":[ "A5(210×148mm)", "A4(297×210mm)", "A3(420×297mm)" ],
+          "value":[ "800", "1500", "2000" ]
+        }
+      ]
+    },
+
+    {
+      "id":"mdf",
+      "name":"木材・MDF材",
+      "color":[
+        { "id":"natural", "name":"MDF ナチュラル", "code":"#fff" }
+      ],
+      "thickness":[ "2.5","4","5.5" ],
+      "size":[ "A5(210×148mm)", "A4(297×210mm)", "A3(420×297mm)" ],
+      "value":[ "500", "800", "1000" ]
+    },
+    {
+      "id":"veneer",
+      "name":"木材・シナベニヤ材",
+      "color":[
+        { "id":"natural", "name":"シナベニヤ ナチュラル", "code":"#fff" }
+      ],
+      "thickness":[ "3" ],
+      "size":[ "A5(210×148mm)", "A4(297×210mm)", "A3(420×297mm)" ],
+      "value":[ "800" ]
+    }
+  ]
+}
+

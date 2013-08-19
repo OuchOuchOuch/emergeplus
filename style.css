@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*
+Theme Name: emerge+
+Description: emerge+ theme by <a href="http://www.emergeplus.jp/">工房Emerge+ </a>
+Author: Hitoshi Yamada
+Author URI: http://www.emergeplus.jp/
+Version: 0.1
+License: GNU General Public License
+Tags: white
+*/
+
+@import url('bootstrap/css/bootstrap.css');
+@import url('bootstrap/css/bootstrap-responsive.css');
+
+body {
+  padding-top: 0px;
+  padding-bottom: 40px;
+
+  background-color:#fff;
+  background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background:-webkit-linear-gradient(top, #fff, #fff);
+  background:-moz-linear-gradient(top, #fff, #fff);
+  background:-o-linear-gradient(top, #fff, #fff);
+  background:linear-gradient(to left, #fff, #fff);
+}
+
+@media (max-width: 980px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+.caption {
+  color: #666;
+  background-color: #fff;
+  background:-webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff));
+  background:-webkit-linear-gradient(right, #eee, #fff);
+  background:-moz-linear-gradient(right, #eee, #fff);
+  background:-o-linear-gradient(right, #eee, #fff);
+  background:linear-gradient(to left, #eee, #fff);
+  border-left: #08c 10px solid;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+}
+
+p li {
+  color: #ccc;
+}
+
+
