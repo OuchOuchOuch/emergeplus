@@ -30,8 +30,21 @@ register_sidebar( array(
 	'name' => 'サイドバーウィジット',
 	'id' => 'sidebar-1',
 	'description' => 'サイドバーのウィジットエリアです。デフォルトのサイドバーと丸ごと入れ替えたいときに使ってください。',
-'before_widget' => '',
-'after_widget' => '',
+  'before_widget' => '<div id="%1$s" class="widget %2$s">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3 class="widgettitle">',
+  'after_title' => '</h3>',
+) );
+
+// ダイナミックサイドバーを定義するコード（CHAPTER 11）
+register_sidebar( array(
+	'name' => 'サイドバーウィジット2',
+	'id' => 'sidebar-2',
+	'description' => 'サイドバーのウィジットエリアです。',
+  'before_widget' => '<div id="%1$s" class="widget %2$s">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3 class="widgettitle">',
+  'after_title' => '</h3>',
 ) );
 
 // 複数のダイナミックサイドバーを定義するコード（CHAPTER 11）

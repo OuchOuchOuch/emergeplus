@@ -402,6 +402,9 @@ function setEstimateToTextarea() {
     text += jQuery('#form'+(i+1) + ' input[name="thickness"]:checked').parent().text().split(' ')[1] + '\n';
     text += '\t加工枚数：\t\t';
     text += jQuery('#form'+(i+1) + ' input[name="cutting-vol"]').val() + '\n';
+    var m2 = m[1].split(' ');
+    if ((m2[0] == 'MDF') || (m2[0] == 'シナベニヤ'))
+      text += '\tマスキング：\t\t' + jQuery('#form'+(i+1) + ' input[name="masking"]:checked').parent().text().split(' ')[1] + '\n';
     if (jQuery('#form'+(i+1) + ' input[name="small-parts"]').is(':checked'))
       text += '\t小部品回収：\t\tあり\n';
     if (jQuery('#form'+(i+1) + ' input[name="mill-ends"]').is(':checked'))

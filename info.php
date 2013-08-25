@@ -37,7 +37,7 @@ if (have_posts()) :
 ?>
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <div class="content-box">
-            <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+            <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
             <p class="post-meta">
               <span class="post-date"><?php the_date(); ?></span>
               <span class="category">カテゴリー - <?php the_category(', ') ?></span>
