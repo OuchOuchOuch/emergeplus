@@ -1,13 +1,29 @@
 <?php get_header(); ?>
 
-    <div id="main" class="container" style="padding:0 20px;">
+  <div id="main" class="container span12" style="margin-bottom: 20px;">
+
+      <table>
+      <tr>
+      <td class="span3">
+        <a href="/">
+          <img class="img-rounded" src="<?php echo get_template_directory_uri(); ?>/img/emergeplus_logo_2013_200px.gif">
+        </a>
+      </td>
+      <td class="offset2 span7" style="padding-top: 10px; padding-left: 10px;">
+        <h3 class="caption"><?php the_title(); ?></h3>
+      </td>
+      </tr>
+      </table>
+      <hr>
+
       <div class="row-fluid">
-      <div class="span8">
+
+      <div class="span3">
+        <?php get_sidebar(); ?>
+      </div>
+      <div class="span8" style="padding-left: 20px;">
 
 <?php
-//$query_string = "";
-//query_posts($query_string . '&category__not_in=4');
-
 if (have_posts()) :
   while (have_posts()) : the_post();
 ?>
@@ -19,7 +35,8 @@ if (have_posts()) :
               <span class="category">カテゴリー - <?php the_category(', ') ?></span>
             </p>
             
-            <?php the_content();
+            <?php the_content(); ?>
+            <?php
               $args = array(
                 'before' => '<div class="page-link">',
                 'after' => '</div>',
@@ -29,6 +46,9 @@ if (have_posts()) :
                 wp_link_pages($args);
             ?>
 
+            <?php
+              if (!in_category('shopitem')) :
+            ?>
             <p class="footer-post-meta">
               <?php the_tags('Tag : ', ', '); ?>
               <span class="post-author">作成者： <a href=
@@ -41,19 +61,37 @@ if (have_posts()) :
             if (get_previous_post()) :
             ?>
               <li class="previous">
-                <?php previous_post_link('%link', '&laquo; %title'); ?>
+                <?php 
+                  previous_post_link_short(
+                    $format='%link',
+                    $link='&laquo; %title', 
+                    $in_same_cat=false,
+                    $excluded_categories='',
+                    $length=24);                
+                ?>
               </li>
             <?php
             endif;
             if (get_next_post()) :
             ?>
               <li class="next">
-                <?php next_post_link('%link', '&raquo; %title'); ?>
+                <?php 
+                  next_post_link_short(
+                    $format='%link',
+                    $link='%title &raquo;', 
+                    $in_same_cat=false,
+                    $excluded_categories='',
+                    $length=24);                
+                ?>
               </li>
             <?php
             endif;
             ?>
             </ul>
+            <?php
+            endif;
+            ?>
+
           </div><!-- cotent-box-->
         </div><!-- posts -->
         <hr>

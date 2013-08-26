@@ -1,6 +1,6 @@
 <?php
 /*
-  Template Name: info
+  Template Name: blog
 */
 ?>
 <?php get_header(); ?>
@@ -30,7 +30,7 @@
 
 <?php
 $query_string = "";
-query_posts($query_string . '&category__in=4');
+query_posts($query_string . '&category__not_in=4');
 
 if (have_posts()) :
   while (have_posts()) : the_post();

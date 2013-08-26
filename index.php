@@ -1,8 +1,28 @@
 <?php get_header(); ?>
 
-    <div id="main" class="container" style="padding:0 20px;">
+  <div id="main" class="container span12" style="margin-bottom: 20px;">
+
+      <table>
+      <tr>
+      <td class="span3">
+        <a href="/">
+          <img class="img-rounded" src="<?php echo get_template_directory_uri(); ?>/img/emergeplus_logo_2013_200px.gif">
+        </a>
+      </td>
+      <td class="offset2 span7" style="padding-top: 10px; padding-left: 10px;">
+        <h3 class="caption"><?php the_title(); ?></h3>
+      </td>
+      </tr>
+      </table>
+      <hr>
+
       <div class="row-fluid">
-      <div class="span8">
+
+      <div class="span3">
+        <?php get_sidebar(); ?>
+      </div>
+      <div class="span8" style="padding-left: 20px;">
+
 <?php
 
 if (have_posts()) :

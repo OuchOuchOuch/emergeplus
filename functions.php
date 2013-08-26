@@ -32,8 +32,8 @@ register_sidebar( array(
 	'description' => 'サイドバーのウィジットエリアです。デフォルトのサイドバーと丸ごと入れ替えたいときに使ってください。',
   'before_widget' => '<div id="%1$s" class="widget %2$s">',
   'after_widget' => '</div>',
-  'before_title' => '<h3 class="widgettitle">',
-  'after_title' => '</h3>',
+  'before_title' => ' <div class="alert-info" style="padding-left:13px;">',
+  'after_title' => '</div>',
 ) );
 
 // ダイナミックサイドバーを定義するコード（CHAPTER 11）
